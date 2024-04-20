@@ -17,14 +17,16 @@ async function main() {
     let vault: PasswordVault | undefined
 
     while (true) {
+        console.log('\n')
         console.log('What would you like to do?')
         console.log('1. Create a new password vault')
         console.log('2. Sign in to a password vault')
         console.log('3. Add a password to a vault')
         console.log('4. Fetch a password from a vault')
         console.log('Quit (enter q or quit')
+        console.log('\n')
 
-        const choice = await promptUser('> ');
+        const choice = await promptUser('⚡ ');
 
         if (choice === 'q' || choice == 'quit') {
             break;
